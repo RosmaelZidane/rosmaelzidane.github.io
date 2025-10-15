@@ -4,61 +4,243 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rosmaël Zidane Lekeufack Foulefack</title>
+
+  <!-- Font Awesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-6PmJvU7eOfv8dZ3eKn5sUd7zNg7u1Rr+RjSpj85Q7bRzYMCkqSWZyZ8YkpU2LZpU3We6ShYI4WcT+QvVhwHb3g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: "Segoe UI", Roboto, sans-serif;
+      background-color: #f7f9fb;
+      margin: 0;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(90deg, #005fa3, #0077cc);
+      color: white;
+      text-align: center;
+      padding: 30px 15px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 1.9em;
+      margin-bottom: 5px;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 1em;
+      font-weight: 300;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #e3f2fd;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .main-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin: 30px auto;
+      width: 90%;
+      max-width: 1100px;
+    }
+
+    .left-column {
+      flex: 1 1 28%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .right-column {
+      flex: 1 1 68%;
+    }
+
+    section {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      transition: all 0.2s ease-in-out;
+    }
+
+    section:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    section h2 {
+      border-left: 4px solid #0077cc;
+      padding-left: 10px;
+      margin-bottom: 10px;
+      color: #005fa3;
+    }
+
+    img.profile-photo {
+      width: 150px;
+      border-radius: 50%;
+      display: block;
+      margin: 10px auto;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    }
+
+    .center-text {
+      text-align: center;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 8px 0;
+    }
+
+    .contact-item i {
+      color: #0077cc;
+      font-size: 1.2em;
+      width: 24px;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #0077cc;
+      color: white;
+      font-size: 0.9em;
+      margin-top: 40px;
+    }
+
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #005fa3;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 900px) {
+      .main-container {
+        flex-direction: column;
+      }
+      .left-column,
+      .right-column {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <header>
     <h1>Rosmaël Zidane Lekeufack Foulefack</h1>
     <p>Doctoral Researcher at the University of Trento</p>
-
     <nav>
       <a href="#home">Home</a> |
       <a href="#about">About Me</a> |
-      <a href="#contact">Contact</a> |
       <a href="publications.html">Publications</a> |
-      <a href="education.html">Education</a>
+      <a href="education.html">Education</a> |
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <!-- Home Section -->
-  <section id="home">
-    <img src="rosmaelphoto.png" alt="Rosmaël Zidane Lekeufack Foulefack" style="width:180px;border-radius:50%;display:block;margin:auto;">
-    <h2 style="text-align:center;">Rosmaël Zidane Lekeufack Foulefack</h2>
-    <p style="text-align:center;">
-      <strong>Doctoral Researcher</strong><br>
-      University of Trento
-    </p>
-  </section>
+  <div class="main-container">
 
-  <!-- Welcome Section -->
-  <section>
-    <h2>Welcome</h2>
-    <p>
-      Welcome to my professional page! I am a researcher in software security, focusing on
-      vulnerability detection, software supply chain analysis, and machine learning for secure software engineering.
-      Please explore below to learn more about my background, contact information, and links to my research.
-    </p>
-  </section>
+    <!-- LEFT COLUMN -->
+    <div class="left-column">
+      <section id="home" class="center-text">
+        <img src="rosmaelphoto.png" alt="Rosmaël Zidane Lekeufack Foulefack" class="profile-photo" />
+        <h2>Rosmaël Zidane Lekeufack Foulefack</h2>
+        <p><strong>Doctoral Researcher</strong><br>University of Trento, Italy</p>
+      </section>
 
-  <!-- About Me Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <img src="rosmaelphoto.png" alt="Rosmaël Zidane" style="width:150px;border-radius:50%;display:block;margin:auto;">
-    <p>
-      I am a Postdoctoral Research Scholar at North Carolina State University. My research focuses on 
-      software vulnerability detection, program analysis, and mining software repositories for improving 
-      software reliability and security.
-    </p>
-  </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:rz.lekeufack@unitn.it">rz.lekeufack@unitn.it</a>
+        </div>
+        <div class="contact-item">
+          <i class="fa-brands fa-linkedin"></i>
+          <a href="https://www.linkedin.com/in/rosmaellekeufack" target="_blank">linkedin.com/in/rosmaellekeufack</a>
+        </div>
+        <div class="contact-item">
+          <i class="fa-brands fa-orcid"></i>
+          <a href="https://orcid.org/0009-0005-7701-1634" target="_blank">0009-0005-7701-1634</a>
+        </div>
+        <div class="contact-item">
+          <i class="fa-brands fa-github"></i>
+          <a href="https://github.com/RosmaelZidane" target="_blank">github.com/RosmaelZidane</a>
+        </div>
+        <div class="contact-item">
+          <i class="fa-solid fa-flask"></i>
+          <a href="https://github.com/SCVDetect" target="_blank">github.com/SCVDetect</a>
+        </div>
+      </section>
+    </div>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:rz.lekeufack@unitn.it">rz.lekeufack@unitn.it</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/rosmaellekeufack" target="_blank">linkedin.com/in/rosmaellekeufack</a></p>
-    <p>GitHub 1: <a href="https://github.com/RosmaelZidane" target="_blank">github.com/RosmaelZidane</a></p>
-    <p>GitHub 2: <a href="https://github.com/SCVDetect" target="_blank">github.com/SCVDetect</a></p>
-  </section>
+    <!-- RIGHT COLUMN -->
+    <div class="right-column">
+
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          Rosmaël Zidane received his Master’s degree in Science and Technology from the University of Dschang, Cameroon.
+          With a strong passion for modern computing, he joined the African Institute for Mathematical Sciences (AIMS),
+          where he completed a structured Master’s program in Data Science, focusing on deep learning. He is currently pursuing
+          a Ph.D. in Computer Science at the University of Trento, Italy. His research focuses on
+          <strong>AI-driven vulnerability detection in source code</strong>, leveraging graph-based models and domain
+          knowledge integration. He is passionate about artificial intelligence, software security, and innovative
+          data-driven methodologies to improve the reliability of modern software systems.
+        </p>
+      </section>
+
+      <section id="research">
+        <h2>Research Interests</h2>
+        <ul>
+          <li>AI-based vulnerability detection in source code</li>
+          <li>Graph neural networks and software security</li>
+          <li>Mining software repositories for threat analysis</li>
+          <li>Machine learning for cybersecurity applications</li>
+          <li>Knowledge graph integration for software analysis</li>
+        </ul>
+      </section>
+
+      <section id="language">
+        <h2>Languages</h2>
+        <ul>
+          <li><strong>French:</strong> Native language</li>
+          <li><strong>English:</strong> Fluent (second language)</li>
+          <li><strong>Italian:</strong> Basic proficiency (integration learning) [B1]</li>
+          <li><strong>Yemba:</strong> Local language of native village (Dschang, Cameroon)</li>
+        </ul>
+      </section>
+    </div>
+  </div>
 
   <footer>
     <p>&copy; 2025 Rosmaël Zidane Lekeufack Foulefack. All rights reserved.</p>

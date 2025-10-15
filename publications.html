@@ -5,7 +5,92 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Publications - Rosmaël Zidane</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Container for all publication cards */
+    .pub-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+      margin: 30px auto;
+      width: 90%;
+      max-width: 1000px;
+    }
+
+    /* Each publication card */
+    .pub-card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .pub-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+    }
+
+    .pub-title {
+      font-weight: bold;
+      color: #0077cc;
+      margin-bottom: 5px;
+    }
+
+    .pub-venue {
+      font-style: italic;
+      color: #444;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .pub-year {
+      color: #666;
+      font-size: 0.9em;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .pub-link a {
+      text-decoration: none;
+      color: white;
+      background: #0077cc;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 0.9em;
+      transition: background 0.2s ease;
+    }
+
+    .pub-link a:hover {
+      background: #005fa3;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background: #0077cc;
+      color: white;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      background: #0077cc;
+      color: white;
+      padding: 10px 0;
+      margin-top: 40px;
+    }
+  </style>
 </head>
+
 <body>
   <header>
     <h1>Publications</h1>
@@ -17,16 +102,84 @@
     </nav>
   </header>
 
-  <section>
-    <ul>
-      <li><b>Modeling Function-Level Relationships for Vulnerability Detection in Graph Neural Networks</b>, <i>Engineering Applications of Artificial Intelligence</i>, 2025.</li>
-      <li><b>Improving Software Vulnerability Detection through Domain-Aware Learning</b>, <i>IEEE Transactions on Software Engineering</i>, 2024.</li>
-      <li><b>CrossVul: Benchmarking Cross-Project Vulnerability Detection</b>, <i>ICSE</i>, 2023.</li>
-    </ul>
-  </section>
+  <div class="pub-container">
+
+    <div class="pub-card">
+      <div class="pub-title">On the Use of Imbalanced Datasets for Learning-Based Vulnerability Detection</div>
+      <span class="pub-venue">ICTSS</span>
+      <span class="pub-year">2025</span>
+      <div class="pub-link"><a href="https://link.springer.com/chapter/10.1007/978-3-032-05188-2_20" target="_blank">View Paper</a></div>
+    </div>
+
+    <div class="pub-card">
+      <div class="pub-title">A Taxonomy of System-Level Attacks on Deep Learning Models in Autonomous Vehicles</div>
+      <span class="pub-venue">ACM Transactions on Software Engineering and Methodology</span>
+      <span class="pub-year">2025</span>
+      <div class="pub-link"><a href="https://dl.acm.org/doi/abs/10.1145/3769009" target="_blank">View Paper</a></div>
+    </div>
+
+    <div class="pub-card">
+      <div class="pub-title">Incorporating Domain Knowledge into GNNs for Advanced Vulnerability Detection in Java</div>
+      <span class="pub-venue">IEEE/ACM International Conference on Automation of Software Test (AST)</span>
+      <span class="pub-year">2025</span>
+      <div class="pub-link"><a href="https://ieeexplore.ieee.org/abstract/document/11081725" target="_blank">View Paper</a></div>
+    </div>
+
+    <!--
+    <div class="pub-card">
+      <div class="pub-title">Towards a Knowledge Graph Based Approach for Vulnerable Code Weaknesses</div>
+      <span class="pub-venue">ICTSS</span>
+      <span class="pub-year">2024</span>
+      <div class="pub-link"><a href="#" target="_blank">View Paper</a></div>
+    </div>
+    -->
+
+    <div class="pub-card">
+      <div class="pub-title">Enhanced Graph Neural Networks for Vulnerability Detection in Java via Advanced Subgraph Construction</div>
+      <span class="pub-venue">ICTSS</span>
+      <span class="pub-year">2024</span>
+      <div class="pub-link"><a href="https://link.springer.com/chapter/10.1007/978-3-031-80889-0_9" target="_blank">View Paper</a></div>
+    </div>
+
+    <div class="pub-card">
+      <div class="pub-title">Enhancing Vulnerability Detection with Domain Knowledge: A Comparison of Different Mechanisms</div>
+      <span class="pub-venue">ICTSS</span>
+      <span class="pub-year">2024</span>
+      <div class="pub-link"><a href="https://link.springer.com/chapter/10.1007/978-3-031-80889-0_7" target="_blank">View Paper</a></div>
+    </div>
+
+    <div class="pub-card">
+      <div class="pub-title">Towards a Knowledge Graph Based Approach for Vulnerable Code Weaknesses Identification</div>
+      <span class="pub-venue">ICTSS</span>
+      <span class="pub-year">2024</span>
+      <div class="pub-link"><a href="https://link.springer.com/chapter/10.1007/978-3-031-80889-0_11" target="_blank">View Paper</a></div>
+    </div>
+
+    <div class="pub-card">
+      <div class="pub-title">A Rapid Review on Graph-Based Learning Vulnerability Detection</div>
+      <span class="pub-venue">QUATIC</span>
+      <span class="pub-year">2024</span>
+      <div class="pub-link"><a href="https://link.springer.com/chapter/10.1007/978-3-031-70245-7_25" target="_blank">View Paper</a></div>
+    </div>
+
+    <div class="pub-card">
+      <div class="pub-title">Towards the Use of Domain Knowledge to Enhance Transformer-Based Vulnerability Detection</div>
+      <span class="pub-venue">QUATIC</span>
+      <span class="pub-year">2024</span>
+      <div class="pub-link"><a href="https://link.springer.com/chapter/10.1007/978-3-031-70245-7_26" target="_blank">View Paper</a></div>
+    </div>
+
+    <div class="pub-card">
+      <div class="pub-title">Malaria Parasite Detection in Microscopic Blood Smear Images Using Deep Learning Techniques</div>
+      <span class="pub-venue">IJCNN</span>
+      <span class="pub-year">2024</span>
+      <div class="pub-link"><a href="https://ieeexplore.ieee.org/abstract/document/10651385" target="_blank">View Paper</a></div>
+    </div>
+
+  </div>
 
   <footer>
-    <p>&copy; 2025 Rosmaël Zidane Lekeufack Foulefack.</p>
+    <p>&copy; 2025 Rosmaël Zidane Lekeufack Foulefack. All rights reserved.</p>
   </footer>
 </body>
 </html>
