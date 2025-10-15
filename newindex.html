@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rosmaël Zidane Lekeufack Foulefack</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Simple layout control */
+    .main-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin: 20px;
+    }
+
+    .left-column {
+      flex: 1 1 30%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .right-column {
+      flex: 1 1 65%;
+    }
+
+    section {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+    }
+
+    @media (max-width: 900px) {
+      .main-container {
+        flex-direction: column;
+      }
+      .left-column,
+      .right-column {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Rosmaël Zidane Lekeufack Foulefack</h1>
+    <p>Doctoral Researcher at the University of Trento</p>
+
+    <nav>
+      <a href="#home">Home</a> |
+      <a href="#contact">Contact</a> |
+      <a href="#about">About Me</a> |
+      <a href="publications.html">Publications</a> |
+      <a href="education.html">Education</a>
+    </nav>
+  </header>
+
+  <!-- Main content area -->
+  <div class="main-container">
+    <!-- Left column: Home + Contact -->
+    <div class="left-column">
+      <!-- Home Section -->
+      <section id="home">
+        <img src="rosmaelphoto.png" alt="Rosmaël Zidane Lekeufack Foulefack"
+             style="width:150px;border-radius:50%;display:block;margin:auto;">
+        <h2 style="text-align:center;">Rosmaël Zidane Lekeufack Foulefack</h2>
+        <p style="text-align:center;">
+          <strong>Doctoral Researcher</strong><br>
+          University of Trento
+        </p>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:rz.lekeufack@unitn.it">rz.lekeufack@unitn.it</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/rosmaellekeufack" target="_blank">linkedin.com/in/rosmaellekeufack</a></p>
+        <p>ORCID: <a href="https://orcid.org/0009-0005-7701-1634" target="_blank">https://orcid.org/0009-0005-7701-1634</a></p>
+        <p>GitHub 1: <a href="https://github.com/RosmaelZidane" target="_blank">github.com/RosmaelZidane</a></p>
+        <p>GitHub 2: <a href="https://github.com/SCVDetect" target="_blank">github.com/SCVDetect</a></p>
+      </section>
+    </div>
+
+    <div class="right-column">
+      <!-- About Me Section -->
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          Rosmael Zidane received his Master’s degree in Science and Technology from the University of Dschang, Cameroon. With a strong interest in modern science, he was admitted to the African Institute for Mathematical Sciences, where he completed a structured Master's program in Data Science, focusing on deep learning. He is currently pursuing a Ph.D. in Computer Science at the University of Trento. His research is centered on AI-driven vulnerability detection in source code, leveraging graph-based models and domain knowledge integration. Passionate about artificial intelligence and scientific innovation, he is dedicated to developing advanced techniques for improving software security.
+        </p>
+      </section>
+
+      <!-- About Me Section -->
+      <section id="Language">
+        <h2>Languages</h2>
+        <p>
+          French:
+          
+        </p>
+      </section>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Rosmaël Zidane Lekeufack Foulefack. All rights reserved.</p>
+  </footer>
+</body>
+</html>
