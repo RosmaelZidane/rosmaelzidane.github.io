@@ -1,28 +1,42 @@
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
 header {
-    background: #0077cc;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
+  background: #0077cc;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
 
 section {
-    margin: 20px;
-    padding: 20px;
-    background: white;
-    border-radius: 5px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  width: 85%;
+  max-width: 800px;
 }
 
 footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #0077cc;
-    color: white;
+  text-align: center;
+  padding: 10px 0;
+  background: #0077cc;
+  color: white;
+  margin-top: 20px;
 }
