@@ -18,11 +18,23 @@
 
     /* Each publication card */
     .pub-card {
-      background: white;
       border-radius: 10px;
       padding: 20px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    /* subtle alternating background colors in groups of 3 */
+    .pub-card:nth-child(6n+1),
+    .pub-card:nth-child(6n+2),
+    .pub-card:nth-child(6n+3) {
+      background: #ffffff;
+    }
+
+    .pub-card:nth-child(6n+4),
+    .pub-card:nth-child(6n+5),
+    .pub-card:nth-child(6n+6) {
+      background: #f3f8fc;
     }
 
     .pub-card:hover {
@@ -96,17 +108,16 @@
     <h1>Publications</h1>
     <nav>
       <a href="index.html">Home</a> |
-      <a href="about.html">About Me</a> |
+      <a href="index.html#about">About Me</a> |
       <a href="publications.html">Publications</a> |
       <a href="education.html">Education</a>
     </nav>
   </header>
 
   <div class="pub-container">
-
     <div class="pub-card">
       <div class="pub-title">On the Use of Imbalanced Datasets for Learning-Based Vulnerability Detection</div>
-      <span class="pub-venue">ICTSS</span>
+      <span class="pub-venue">IFIP International Conference on Testing Software and Systems</span>
       <span class="pub-year">2025</span>
       <div class="pub-link"><a href="https://link.springer.com/chapter/10.1007/978-3-032-05188-2_20" target="_blank">View Paper</a></div>
     </div>
@@ -125,57 +136,47 @@
       <div class="pub-link"><a href="https://ieeexplore.ieee.org/abstract/document/11081725" target="_blank">View Paper</a></div>
     </div>
 
-    <!--
-    <div class="pub-card">
-      <div class="pub-title">Towards a Knowledge Graph Based Approach for Vulnerable Code Weaknesses</div>
-      <span class="pub-venue">ICTSS</span>
-      <span class="pub-year">2024</span>
-      <div class="pub-link"><a href="#" target="_blank">View Paper</a></div>
-    </div>
-    -->
-
     <div class="pub-card">
       <div class="pub-title">Enhanced Graph Neural Networks for Vulnerability Detection in Java via Advanced Subgraph Construction</div>
-      <span class="pub-venue">ICTSS</span>
+      <span class="pub-venue">IFIP International Conference on Testing Software and Systems</span>
       <span class="pub-year">2024</span>
       <div class="pub-link"><a href="https://link.springer.com/chapter/10.1007/978-3-031-80889-0_9" target="_blank">View Paper</a></div>
     </div>
 
     <div class="pub-card">
       <div class="pub-title">Enhancing Vulnerability Detection with Domain Knowledge: A Comparison of Different Mechanisms</div>
-      <span class="pub-venue">ICTSS</span>
+      <span class="pub-venue">IFIP International Conference on Testing Software and Systems</span>
       <span class="pub-year">2024</span>
       <div class="pub-link"><a href="https://link.springer.com/chapter/10.1007/978-3-031-80889-0_7" target="_blank">View Paper</a></div>
     </div>
 
     <div class="pub-card">
       <div class="pub-title">Towards a Knowledge Graph Based Approach for Vulnerable Code Weaknesses Identification</div>
-      <span class="pub-venue">ICTSS</span>
+      <span class="pub-venue">IFIP International Conference on Testing Software and Systems</span>
       <span class="pub-year">2024</span>
       <div class="pub-link"><a href="https://link.springer.com/chapter/10.1007/978-3-031-80889-0_11" target="_blank">View Paper</a></div>
     </div>
 
     <div class="pub-card">
       <div class="pub-title">A Rapid Review on Graph-Based Learning Vulnerability Detection</div>
-      <span class="pub-venue">QUATIC</span>
+      <span class="pub-venue">Quality of Information and Communications Technology </span>
       <span class="pub-year">2024</span>
       <div class="pub-link"><a href="https://link.springer.com/chapter/10.1007/978-3-031-70245-7_25" target="_blank">View Paper</a></div>
     </div>
 
     <div class="pub-card">
       <div class="pub-title">Towards the Use of Domain Knowledge to Enhance Transformer-Based Vulnerability Detection</div>
-      <span class="pub-venue">QUATIC</span>
+      <span class="pub-venue">[Best Paper Award] Quality of Information and Communications Technology </span>
       <span class="pub-year">2024</span>
       <div class="pub-link"><a href="https://link.springer.com/chapter/10.1007/978-3-031-70245-7_26" target="_blank">View Paper</a></div>
     </div>
 
     <div class="pub-card">
       <div class="pub-title">Malaria Parasite Detection in Microscopic Blood Smear Images Using Deep Learning Techniques</div>
-      <span class="pub-venue">IJCNN</span>
+      <span class="pub-venue">International Joint Conference on Neural Networks (IJCNN)</span>
       <span class="pub-year">2024</span>
       <div class="pub-link"><a href="https://ieeexplore.ieee.org/abstract/document/10651385" target="_blank">View Paper</a></div>
     </div>
-
   </div>
 
   <footer>

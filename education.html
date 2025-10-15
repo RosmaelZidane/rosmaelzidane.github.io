@@ -3,31 +3,251 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Education - Rosmaël Zidane</title>
+  <title>Education & Academic Activities - Rosmaël Zidane</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* ====== BASE LAYOUT ====== */
+    body {
+      margin: 0;
+      font-family: "Inter", "Segoe UI", Roboto, sans-serif;
+      background: #f7faff;
+      color: #2d3436;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 40px;
+      background: linear-gradient(135deg, #002f6c, #0077cc);
+      color: white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 12px;
+      letter-spacing: 0.6px;
+    }
+
+    nav a {
+      color: #e3f2fd;
+      text-decoration: none;
+      margin: 0 14px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    section {
+      background: #ffffff;
+      width: 90%;
+      max-width: 900px;
+      margin: 45px auto;
+      padding: 30px 35px;
+      border-radius: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    section:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+    }
+
+    section h2 {
+      color: #004c99;
+      border-left: 6px solid #0077cc;
+      padding-left: 12px;
+      margin-bottom: 20px;
+      font-size: 1.7em;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin-bottom: 18px;
+      padding: 14px 16px;
+      background: #f5f9ff;
+      border-radius: 10px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+
+    li b {
+      color: #003366;
+    }
+
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .degree {
+      margin-bottom: 8px;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    .institution {
+      font-style: italic;
+      color: #444;
+      margin-bottom: 6px;
+    }
+
+    .thesis {
+      margin-top: 6px;
+      font-size: 0.95em;
+      color: #333;
+    }
+
+    .advisor-line {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 16px;
+      font-size: 0.9em;
+      margin-top: 8px;
+    }
+
+    .advisor {
+      background: #e8f3ff;
+      color: #005fa3;
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-weight: 500;
+    }
+
+    .coadvisor {
+      background: #fff0e1;
+      color: #cc6600;
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-weight: 500;
+    }
+
+    footer {
+      text-align: center;
+      background: #002d66;
+      color: white;
+      padding: 22px 0;
+      margin-top: 60px;
+      font-size: 0.9em;
+      letter-spacing: 0.3px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.9em; }
+      section { padding: 20px; }
+      .advisor-line { flex-direction: column; }
+    }
+  </style>
 </head>
+
 <body>
   <header>
-    <h1>Education</h1>
+    <h1>Education & Academic Activities</h1>
     <nav>
       <a href="index.html">Home</a> |
-      <a href="about.html">About Me</a> |
+      <a href="index.html#about">About Me</a> |
       <a href="publications.html">Publications</a> |
       <a href="education.html">Education</a>
     </nav>
   </header>
 
+  <!-- ====== EDUCATION ====== -->
   <section>
+    <h2>Academic Background</h2>
     <ul>
-      <li><b>PhD in Software Security</b> — Ongoing: University of Trento, Italy</li>
-      <li><b>Master in Data Science</b> — African Institute for Mathematical Science, Cameroon</li>
-      <li><b>Master in Electronics Physique</b> — University of Dschang, Cameroon</li>
-      <li><b>Bachelor in Electronics Physique</b> — University of Dschang, Cameroon</li>
+      <li>
+        <div class="degree">Ph.D. in Computer Science – Software Security (2023/202x)</div>
+        <div class="institution"><a href="https://www.unitn.it/" target="_blank">University of Trento</a>, Italy (Ongoing)</div>
+        <div class="thesis">Research Topic: AI-Driven, Domain-Aware Models for Software Vulnerability Detection</div>
+        <div class="advisor-line">
+          <span class="advisor">Advisor: Prof. Alessandro Marchetto</span>
+          <span class="coadvisor">Co-Advisor: Prof. Fabio Massacci</span>
+        </div>
+      </li>
+
+      <li>
+        <div class="degree">M.Sc. in Data Science (2022/2023)</div>
+        <div class="institution"><a href="https://aims-cameroon.org/" target="_blank">African Institute for Mathematical Sciences (AIMS)</a>, Cameroon</div>
+        <div class="thesis">Thesis: “Malaria Parasite Detection in Microscopic Blood Smear Images Using Deep Learning Techniques.”</div>
+        <div class="advisor-line">
+          <span class="advisor">Advisor: Dr. Akinyelu AndroNicus</span>
+          <span class="coadvisor">Co-Advisor: Dr. Dinna Ranirina</span>
+        </div>
+      </li>
+
+      <li>
+        <div class="degree">M.Sc. in Electronics Physics (2020/2022)</div>
+        <div class="institution"><a href="https://www.univ-dschang.org/" target="_blank">University of Dschang</a>, Cameroon</div>
+        <div class="thesis">Thesis: “Contribution to the receiver design for diffusion-based molecular communication with a Poisson process.”</div>
+        <div class="advisor-line">
+          <span class="advisor">Advisor: Prof. Fotsin Hilaire</span>
+          <span class="coadvisor">Co-Advisor: Dr. M. N. Elie Bertrand</span>
+        </div>
+      </li>
+
+      <li>
+        <div class="degree">B.Sc. in Electronics Physics (2017/2020)</div>
+        <div class="institution"><a href="https://www.univ-dschang.org/" target="_blank">University of Dschang</a>, Cameroon</div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ====== TEACHING & CO-ADVISEES ====== -->
+  <section>
+    <h2>Teaching & Supervision</h2>
+    <ul>
+      <li>
+        <b>Teaching Assistant (2023/2024 -- 2024/205)</b> — Course: <i>Software Testing</i><br>
+        Lecturer: Prof. Alessandro Marchetto, University of Trento
+      </li>
+      <li>
+        <b>Co-Advised:</b> Eddie Veronese — Topic: <i>Mixture of Experts for Vulnerability Detection</i><br>
+        <div class="advisor-line">
+          <span class="advisor">Advisor: Prof. Alessandro Marchetto</span>
+          <span class="coadvisor">Co-Advisor: Rosmaël Zidane Lekeufack Foulefack</span>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ====== TALKS ====== -->
+  <section>
+    <h2>Talks & Conferences</h2>
+    <ul>
+      <li><b>ICTSS 2025 – Limassol:</b> “On the Use of Imbalanced Datasets for Learning-Based Vulnerability Detection.”</li>
+      <li><b>QUATIC 2025 – Lisbon:</b> “Decoding Graph Neural Network Decisions for Source Code Vulnerability Detection; To be, or not to be expert for a learning-based vulnerability detection method, this is the question”</li>
+      <li><b>AST 2025 – Ottawa:</b> “Incorporating Domain Knowledge for Source Code Vulnerability Detection.”</li>
+      <li><b>ITASEC – Bologna:</b> “Towards Enhancing Graph Neural Networks for Vulnerability Detection in Java”</li>
+      <li><b>ICTSS 2024 – London:</b> “Towards a Knowledge Graph Based Approach for Vulnerable Code Weaknesses Identification; Enhancing Vulnerability Detection with Domain Knowledge: A Comparison of Different Mechanisms; Enhanced Graph Neural Networks for Vulnerability Detection in Java via Advanced Subgraph Construction”</li>
+      <li><b>QUATIC 2024 – Pisa:</b> “A Rapid Review on Graph-Based Learning Vulnerability Detection; Towards the Use of Domain Knowledge to Enhance Transformer-Based Vulnerability Detection”</li>
+    </ul>
+  </section>
+
+  <!-- ====== SUMMER SCHOOL & INTERNSHIPS ====== -->
+  <section>
+    <h2>Summer Schools, Certifications & Internships</h2>
+    <ul>
+      <li><a href="https://cybersecurity-research.be/summer-school-on-security-testing-and-verification-2025/" target="_blank"><b>Summer School on Security Testing and Verification</b></a> — Belgium, 2025</li>
+      <li><a href="https://tarot-school.github.io/" target="_blank"><b>TAROT: Summer School on Software Testing, Verification & Validation</b></a> — Bergamo, 2024</li>
+      <li><a href="https://www.s2bi.africa/" target="_blank"><b>4-Month Internship on Data Analysis</b></a> - S2 Business Intelligence, 2023, Douala, Cameroon</li>
+      <li><a href="https://iiafrica.org/" target="_blank"><b>Certification in Business Management</b></a> — Industry Immersion Africa (iiAfrica) / ESMT Berlin, 2023, AIMS Cameroon</li>
     </ul>
   </section>
 
   <footer>
-    <p>&copy; 2025 Rosmaël Zidane Lekeufack Foulefack.</p>
+    <p>&copy; 2025 Rosmaël Zidane Lekeufack Foulefack. All rights reserved.</p>
   </footer>
 </body>
 </html>
