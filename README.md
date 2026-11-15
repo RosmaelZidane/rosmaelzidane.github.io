@@ -1,60 +1,18 @@
 # Rosmaël Zidane — Academic website
 
-A fast, accessible, **static website** for GitHub Pages. No package manager, build tools, dependencies, or API keys are required.
-
-## Deploy on GitHub Pages
-
-1. Download and unzip the website ZIP.
-2. Open your `rosmaelzidane.github.io` repository on GitHub.
-3. Replace the files in the **repository root** with the **contents** of this extracted folder (not the folder itself).
-4. Commit and push to `main`.
-5. Under **Settings → Pages**, choose **Deploy from a branch**, `main`, `/ (root)` if it is not already configured.
-6. Visit `https://rosmaelzidane.github.io/` after GitHub Pages deploys.
-
-For command-line deployment from the existing repository, copy these files into your local clone and run:
-
-```bash
-git add -A
-git commit -m "Redesign academic site and add CV, research and mentorship"
-git push origin main
-```
-
 ## Files
 
 ```
-index.html               Homepage, research, current project, mentoring, selected publications
-publications.html        All published work, filter/search, separate submitted manuscripts
-education.html           Master's mentorship, teaching, experience, education, service
-cv.html                  Embedded CV with download and new-tab links
+index.html               
+publications.html        
+education.html           
+cv.html                  
 cv/
   Rosmael_Lekeufack_Foulefack_Academic_CV.pdf
 Images/
-  rosmaelphoto.png       Original profile photo, reused
-  email.png              Retained from original project
-styles.css               Responsive visual design
-script.js                Mobile navigation and publication filtering
-favicon.svg              RZ favicon
+  rosmaelphoto.png       
+  email.png              
+styles.css               
+script.js                
+favicon.svg              
 ```
-
-## Updating content
-
-- **CV:** replace `cv/Rosmael_Lekeufack_Foulefack_Academic_CV.pdf` with a new PDF, keeping the filename.
-- **Publications:** edit paper cards in `publications.html` (the page is static HTML; `script.js` just filters cards).
-- **Submitted manuscripts:** update the `Submitted & under review` section in `publications.html` when editorial decisions change. They are not counted as published work.
-- **People / thesis projects:** edit the `Master's mentorship` section in `education.html`.
-- **NivoDec / team lead:** edit the `Current work` section in `index.html`. The challenge is scheduled to conclude in December 2026: change “ongoing” when appropriate.
-- **Google Scholar:** the existing profile URL is used across the site.
-- **Photo:** replace `Images/rosmaelphoto.png` with a similarly sized, preferably transparent image.
-
-## Source verification & editorial notes
-
-- Organizer: [Industrial & Public AI Challenge 2026, Fondazione HIT](https://www.trentinoinnovation.eu/industrial-public-ai-challenge-2026/?lang=en).
-- Partner: [Meteotrentino](https://www.meteotrentino.it/).
-- QUATIC 2024 award: [Official awards page](https://www.quatic.org/awards) attributes the ex-aequo Best Paper Award to *Towards the Use of Domain Knowledge to Enhance Transformer-Based Vulnerability Detection* (Alessandro Marchetto & Rosmaël Zidane Lekeufack Foulefack). The **previous CV PDF attached in this package mistakenly associates the award with the Rapid Review**; update the next PDF revision to match the official award record. The website uses the corrected information.
-- The three journal submissions listed in the previous CV and the additional developer-trust ASE manuscript are presented as **under review**, not as accepted work.
-- Marco Roccon and Siddharth Vijay Gawle project details were provided directly for this update; Siddharth's title is deliberately marked as not yet defined.
-- Information reflects **November 2026**. Update project/submission status as it changes.
-
-## Privacy, security, accessibility
-
-No analytics, tracking pixels, cookies, or forms. Links to external sites open in a separate tab using `rel="noopener noreferrer"`. This site only uses optional Google Fonts, and falls back to system fonts if unavailable. Works as static files without a server.
