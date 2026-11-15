@@ -1,253 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Education & Academic Activities - Rosmaël Zidane</title>
-  <link rel="stylesheet" href="styles.css" />
-  <style>
-    /* ====== BASE LAYOUT ====== */
-    body {
-      margin: 0;
-      font-family: "Inter", "Segoe UI", Roboto, sans-serif;
-      background: #f7faff;
-      color: #2d3436;
-      line-height: 1.6;
-    }
-
-    header {
-      text-align: center;
-      padding: 60px 20px 40px;
-      background: linear-gradient(135deg, #002f6c, #0077cc);
-      color: white;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-    }
-
-    header h1 {
-      font-size: 2.5em;
-      margin-bottom: 12px;
-      letter-spacing: 0.6px;
-    }
-
-    nav a {
-      color: #e3f2fd;
-      text-decoration: none;
-      margin: 0 14px;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #ffffff;
-      text-decoration: underline;
-    }
-
-    section {
-      background: #ffffff;
-      width: 90%;
-      max-width: 900px;
-      margin: 45px auto;
-      padding: 30px 35px;
-      border-radius: 14px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    section:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 6px 14px rgba(0,0,0,0.12);
-    }
-
-    section h2 {
-      color: #004c99;
-      border-left: 6px solid #0077cc;
-      padding-left: 12px;
-      margin-bottom: 20px;
-      font-size: 1.7em;
-    }
-
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
-
-    li {
-      margin-bottom: 18px;
-      padding: 14px 16px;
-      background: #f5f9ff;
-      border-radius: 10px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-    }
-
-    li b {
-      color: #003366;
-    }
-
-    a {
-      color: #0066cc;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .degree {
-      margin-bottom: 8px;
-      font-weight: bold;
-      font-size: 1.1em;
-    }
-
-    .institution {
-      font-style: italic;
-      color: #444;
-      margin-bottom: 6px;
-    }
-
-    .thesis {
-      margin-top: 6px;
-      font-size: 0.95em;
-      color: #333;
-    }
-
-    .advisor-line {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px 16px;
-      font-size: 0.9em;
-      margin-top: 8px;
-    }
-
-    .advisor {
-      background: #e8f3ff;
-      color: #005fa3;
-      padding: 4px 8px;
-      border-radius: 6px;
-      font-weight: 500;
-    }
-
-    .coadvisor {
-      background: #fff0e1;
-      color: #cc6600;
-      padding: 4px 8px;
-      border-radius: 6px;
-      font-weight: 500;
-    }
-
-    footer {
-      text-align: center;
-      background: #002d66;
-      color: white;
-      padding: 22px 0;
-      margin-top: 60px;
-      font-size: 0.9em;
-      letter-spacing: 0.3px;
-    }
-
-    @media (max-width: 600px) {
-      header h1 { font-size: 1.9em; }
-      section { padding: 20px; }
-      .advisor-line { flex-direction: column; }
-    }
-  </style>
-</head>
-
-<body>
-  <header>
-    <h1>Education & Academic Activities</h1>
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="index.html#about">About Me</a> |
-      <a href="publications.html">Publications</a> |
-      <a href="education.html">Education</a>
-    </nav>
-  </header>
-
-  <!-- ====== EDUCATION ====== -->
-  <section>
-    <h2>Academic Background</h2>
-    <ul>
-      <li>
-        <div class="degree">Ph.D. in Computer Science – Software Security (2023/202x)</div>
-        <div class="institution"><a href="https://www.unitn.it/" target="_blank">University of Trento</a>, Italy (Ongoing)</div>
-        <div class="thesis">Research Topic: AI-Driven, Domain-Aware Models for Software Vulnerability Detection</div>
-        <div class="advisor-line">
-          <span class="advisor">Advisor: Prof. Alessandro Marchetto</span>
-          <span class="coadvisor">Co-Advisor: Prof. Fabio Massacci</span>
-        </div>
-      </li>
-
-      <li>
-        <div class="degree">M.Sc. in Data Science (2022/2023)</div>
-        <div class="institution"><a href="https://aims-cameroon.org/" target="_blank">African Institute for Mathematical Sciences (AIMS)</a>, Cameroon</div>
-        <div class="thesis">Thesis: “Malaria Parasite Detection in Microscopic Blood Smear Images Using Deep Learning Techniques.”</div>
-        <div class="advisor-line">
-          <span class="advisor">Advisor: Dr. Akinyelu AndroNicus</span>
-          <span class="coadvisor">Co-Advisor: Dr. Dinna Ranirina</span>
-        </div>
-      </li>
-
-      <li>
-        <div class="degree">M.Sc. in Electronics Physics (2020/2022)</div>
-        <div class="institution"><a href="https://www.univ-dschang.org/" target="_blank">University of Dschang</a>, Cameroon</div>
-        <div class="thesis">Thesis: “Contribution to the receiver design for diffusion-based molecular communication with a Poisson process.”</div>
-        <div class="advisor-line">
-          <span class="advisor">Advisor: Prof. Fotsin Hilaire</span>
-          <span class="coadvisor">Co-Advisor: Dr. M. N. Elie Bertrand</span>
-        </div>
-      </li>
-
-      <li>
-        <div class="degree">B.Sc. in Electronics Physics (2017/2020)</div>
-        <div class="institution"><a href="https://www.univ-dschang.org/" target="_blank">University of Dschang</a>, Cameroon</div>
-      </li>
-    </ul>
-  </section>
-
-  <!-- ====== TEACHING & CO-ADVISEES ====== -->
-  <section>
-    <h2>Teaching & Supervision</h2>
-    <ul>
-      <li>
-        <b>Teaching Assistant (2023/2024 -- 2024/205)</b> — Course: <i>Software Testing</i><br>
-        Lecturer: Prof. Alessandro Marchetto, University of Trento
-      </li>
-      <li>
-        <b>Co-Advised:</b> Eddie Veronese — Topic: <i>Mixture of Experts for Vulnerability Detection</i><br>
-        <div class="advisor-line">
-          <span class="advisor">Advisor: Prof. Alessandro Marchetto</span>
-          <span class="coadvisor">Co-Advisor: Rosmaël Zidane Lekeufack Foulefack</span>
-        </div>
-      </li>
-    </ul>
-  </section>
-
-  <!-- ====== TALKS ====== -->
-  <section>
-    <h2>Talks & Conferences</h2>
-    <ul>
-      <li><b>ICTSS 2025 – Limassol:</b> “On the Use of Imbalanced Datasets for Learning-Based Vulnerability Detection.”</li>
-      <li><b>QUATIC 2025 – Lisbon:</b> “Decoding Graph Neural Network Decisions for Source Code Vulnerability Detection; To be, or not to be expert for a learning-based vulnerability detection method, this is the question”</li>
-      <li><b>AST 2025 – Ottawa:</b> “Incorporating Domain Knowledge for Source Code Vulnerability Detection.”</li>
-      <li><b>ITASEC – Bologna:</b> “Towards Enhancing Graph Neural Networks for Vulnerability Detection in Java”</li>
-      <li><b>ICTSS 2024 – London:</b> “Towards a Knowledge Graph Based Approach for Vulnerable Code Weaknesses Identification; Enhancing Vulnerability Detection with Domain Knowledge: A Comparison of Different Mechanisms; Enhanced Graph Neural Networks for Vulnerability Detection in Java via Advanced Subgraph Construction”</li>
-      <li><b>QUATIC 2024 – Pisa:</b> “A Rapid Review on Graph-Based Learning Vulnerability Detection; Towards the Use of Domain Knowledge to Enhance Transformer-Based Vulnerability Detection”</li>
-    </ul>
-  </section>
-
-  <!-- ====== SUMMER SCHOOL & INTERNSHIPS ====== -->
-  <section>
-    <h2>Summer Schools, Certifications & Internships</h2>
-    <ul>
-      <li><a href="https://cybersecurity-research.be/summer-school-on-security-testing-and-verification-2025/" target="_blank"><b>Summer School on Security Testing and Verification</b></a> — Belgium, 2025</li>
-      <li><a href="https://tarot-school.github.io/" target="_blank"><b>TAROT: Summer School on Software Testing, Verification & Validation</b></a> — Bergamo, 2024</li>
-      <li><a href="https://www.s2bi.africa/" target="_blank"><b>4-Month Internship on Data Analysis</b></a> - S2 Business Intelligence, 2023, Douala, Cameroon</li>
-      <li><a href="https://iiafrica.org/" target="_blank"><b>Certification in Business Management</b></a> — Industry Immersion Africa (iiAfrica) / ESMT Berlin, 2023, AIMS Cameroon</li>
-    </ul>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Rosmaël Zidane Lekeufack Foulefack. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0c242c">
+<meta name="description" content="Master’s research mentorship, teaching, academic training, visiting research and academic service at University of Trento and VUB.">
+<meta property="og:type" content="website"><meta property="og:title" content="Research Mentorship &amp; Academic Background — Rosmaël Zidane"><meta property="og:description" content="Master’s research mentorship, teaching, academic training, visiting research and academic service at University of Trento and VUB.">
+<meta property="og:url" content="https://rosmaelzidane.github.io/education.html">
+<meta property="og:image" content="https://rosmaelzidane.github.io/Images/rosmaelphoto.png">
+<link rel="canonical" href="https://rosmaelzidane.github.io/education.html"><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css">
+<title>Research Mentorship &amp; Academic Background — Rosmaël Zidane</title></head><body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><div class="wrap header-inner"><a href="index.html" class="brand" aria-label="Rosmaël Zidane — home"><span class="brand-mark">RZ</span><span class="brand-label">ROSMAËL ZIDANE<small>Research / Security / AI</small></span></a>
+<button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+<nav class="nav" id="site-nav" aria-label="Main navigation"><a href="index.html" >Home</a>
+<a href="index.html#research" >Research</a>
+<a href="publications.html" >Publications</a>
+<a href="education.html#mentorship" >Mentorship</a>
+<a href="education.html" aria-current="page" >Background</a>
+<a href="cv.html" class="nav-cv" >CV ↗</a></nav></div></header><main id="main"><section class="page-top"><div class="wrap"><div class="eyebrow light">Academic path / People / Teaching</div><h1>Research grows through people.</h1><p>My academic journey, work with students, teaching, and collaborations — from the classroom to peer-reviewed publications.</p><div class="page-cta"><a class="btn btn-primary" href="#mentorship">Explore mentorship ↗</a><a class="btn btn-outline" href="cv.html">Read academic CV ↗</a></div></div></section>
+<section class="section" id="mentorship"><div class="wrap"><div class="section-head"><div><div class="eyebrow">01 / Research mentorship</div><h2>Mentoring ideas into<br>research outcomes.</h2></div><p class="section-side">Co-mentoring Master's research with Prof. Alessandro Marchetto, with a focus on making sound methodological decisions, evaluating results, and communicating work clearly.</p></div><div class="student-cards">
+<article class="student-card"><span class="chip">Co-mentored · Completed</span><h3>Eddie Veronese</h3><p><strong>Research focus:</strong> Mixture-of-Experts for software vulnerability detection.</p><p>Supported the translation of a thesis research idea into experiments and a scholarly manuscript.</p><div class="outcome"><strong>Publication outcome:</strong> Student-first co-authored QUATIC 2025 paper, “To Be, or Not to Be Expert…” (proceedings 2026).</div></article>
+<article class="student-card"><span class="chip">Co-mentored · Thesis</span><h3>Marco Roccon</h3><p><strong>Master's thesis:</strong> Controlled Fusion of Sequential and Graph Features for Vulnerability Detection Architecture.</p><p>Study of how sequence-based and graph-based code representations may be combined for vulnerability detection.</p><div class="outcome neutral"><strong>Research status:</strong> Related manuscript submitted and under review; not yet a published paper.</div></article>
+<article class="student-card"><span class="chip orange">New project · Starting</span><h3>Siddharth Vijay Gawle</h3><p><strong>Planned focus:</strong> Artificial intelligence for vulnerability detection.</p><p>Starting a new co-supervised Master's research project; the research questions and formal thesis title are still being developed.</p><div class="outcome neutral"><strong>Project stage:</strong> Topic definition and early scoping. No publication outcome claimed.</div></article>
+</div><div style="margin-top:22px" class="note">Beyond these named thesis projects, student-led collaborative research has contributed to published work on knowledge-graph-based weakness identification (ICTSS 2024). Specific thesis roles and publication authorship are kept distinct.</div></div></section>
+<section class="section project-section" id="experience"><div class="wrap"><div class="section-head"><div><div class="eyebrow">02 / Research & teaching</div><h2>Learning, building, sharing.</h2></div></div><div class="edu-grid"><div class="sheet"><h3 style="margin-bottom:24px;font-size:1.42rem">Research appointments</h3><div class="timeline"><div class="timeline-row"><div class="timeline-year">2023–2027<br>Expected</div><div><h3>Doctoral Researcher</h3><p><strong>University of Trento · DISI</strong><br>AI for source-code vulnerability detection; graph neural networks, program representations, domain knowledge, evaluation and explainability.</p></div></div><div class="timeline-row"><div class="timeline-year">Apr–Jul<br>2026</div><div><h3>Visiting Research Intern</h3><p><strong>Software Languages Lab · Vrije Universiteit Brussel</strong><br>Research with Prof. Coen De Roover and Dr. Ruben Opdebeeck on Ansible infrastructure-as-code security smells and graph learning.</p></div></div><div class="timeline-row"><div class="timeline-year">2026<br>Ongoing</div><div><h3>Team Lead · NivoDec / Nivo Daily</h3><p><strong>Industrial & Public AI Challenge · Fondazione HIT</strong><br>Leading six researchers and developers on AI-assisted interpretation and factual reporting of Meteotrentino snow observations. <a class="text-link" href="https://www.trentinoinnovation.eu/industrial-public-ai-challenge-2026/?lang=en" target="_blank" rel="noopener noreferrer">Challenge ↗</a></p></div></div></div></div>
+<div><div class="sheet"><h3 style="margin-bottom:23px;font-size:1.42rem">Teaching</h3><span class="chip">Two semesters</span><h3 style="margin-top:15px">Security Testing · Teaching Assistant</h3><p class="muted" style="font-size:.9rem;margin-top:9px">University of Trento · Prof. Alessandro Marchetto</p><p style="font-size:.92rem">Prepared and delivered teaching materials and practical exercises connecting deep learning to software security and evaluation of vulnerability-detection methods.</p></div><div class="sheet"><h3 style="font-size:1.42rem;margin-bottom:14px">Research training</h3><p style="font-size:.88rem">Summer School on Security Testing and Verification · VUB, 2025</p><p style="font-size:.88rem">TAROT Summer School on Software Testing, Verification & Validation · Bergamo, 2024</p><p style="font-size:.88rem;margin:0">Industry Immersion Africa · ESMT Berlin / iiAfrica, 2023</p></div></div></div></div></section>
+<section class="section" id="education"><div class="wrap"><div class="section-head"><div><div class="eyebrow">03 / Education</div><h2>Academic foundations.</h2></div></div><div class="sheet"><div class="timeline">
+<div class="timeline-row"><div class="timeline-year">2023–2027<br>Expected</div><div><h3>PhD in Computer Science</h3><p>University of Trento, Italy · Supervisor: Prof. Alessandro Marchetto<br>Research: AI-driven, domain-aware methods for software vulnerability detection.</p></div></div>
+<div class="timeline-row"><div class="timeline-year">2022–2023</div><div><h3>MSc in Mathematical Sciences · Data Science</h3><p>African Institute for Mathematical Sciences (AIMS), Cameroon · Thesis: Malaria Parasite Detection in Microscopic Blood Smear Images Using Deep Learning Techniques.</p></div></div>
+<div class="timeline-row"><div class="timeline-year">2020–2022</div><div><h3>MSc in Physics · Electronics, Electrical Engineering & Automation</h3><p>University of Dschang, Cameroon · Thesis: Receiver design for diffusion-based molecular communication with a Poisson process.</p></div></div>
+<div class="timeline-row"><div class="timeline-year">2017–2020</div><div><h3>BSc in Physics · Electronics, Electrical Engineering & Automation</h3><p>University of Dschang, Cameroon.</p></div></div>
+</div></div></div></section>
+<section class="section project-section" id="service"><div class="wrap"><div class="section-head"><div><div class="eyebrow">04 / Service & recognition</div><h2>Giving back to research.</h2></div></div><div class="service-grid"><article class="service-card"><span class="chip">Award</span><h3>QUATIC 2024<br>Best Paper</h3><p>Co-author of “Towards the Use of Domain Knowledge to Enhance Transformer-Based Vulnerability Detection.” Awarded ex aequo. <a class="text-link" href="https://www.quatic.org/awards" target="_blank" rel="noopener noreferrer">Official awards ↗</a></p></article><article class="service-card"><span class="chip">Peer review</span><h3>Journal reviewing</h3><p>Reviews for Journal of Information Security and Applications, Information and Software Technology, Journal of Systems Architecture, and SN Computer Science.</p></article><article class="service-card"><span class="chip">Community</span><h3>DeepTest 2026</h3><p>Co-organizing committee member. Also contributed through conference participation and international research collaborations.</p></article></div><div style="margin-top:23px" class="note">Additional distinctions include the University of Trento doctoral scholarship, AIMS full Master's scholarship, Industry Immersion Africa fellowship, and academic excellence awards.</div></div></section>
+<section class="contact-block"><div class="wrap contact-grid"><div><div class="eyebrow light">Collaboration</div><h2>Mentoring, research,<br>and what comes next.</h2><p>Interested in research collaborations, joint thesis work, or postdoctoral opportunities? I welcome thoughtful conversations.</p></div><div class="contact-actions"><a class="btn btn-primary" href="mailto:rz.lekeufack@unitn.it">Write to me ↗</a><a class="btn btn-outline" href="cv.html">View academic CV ↗</a></div></div></section></main><footer class="footer"><div class="wrap footer-inner"><small>© 2026 Rosmaël Zidane Lekeufack Foulefack · Built to share research and collaboration.</small><div class="links"><a href="https://scholar.google.com/citations?user=Eq1YljIAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a><a href="https://github.com/RosmaelZidane" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/rosmaellekeufack" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://orcid.org/0009-0005-7701-1634" target="_blank" rel="noopener noreferrer">ORCID ↗</a><a href="mailto:rz.lekeufack@unitn.it">Email ↗</a></div></div></footer><script src="script.js" defer></script></body></html>

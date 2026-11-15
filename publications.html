@@ -1,214 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Publications - Rosmaël Zidane</title>
-  <link rel="stylesheet" href="styles.css" />
-  <style>
-    /* Container for all publication cards */
-    .pub-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 20px;
-      margin: 30px auto;
-      width: 90%;
-      max-width: 1000px;
-    }
-
-    /* Each publication card */
-    .pub-card {
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    /* subtle alternating background colors in groups of 3 */
-    .pub-card:nth-child(6n+1),
-    .pub-card:nth-child(6n+2),
-    .pub-card:nth-child(6n+3) {
-      background: #ffffff;
-    }
-
-    .pub-card:nth-child(6n+4),
-    .pub-card:nth-child(6n+5),
-    .pub-card:nth-child(6n+6) {
-      background: #f3f8fc;
-    }
-
-    .pub-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 4px 14px rgba(0,0,0,0.15);
-    }
-
-    .pub-title {
-      font-weight: bold;
-      color: #0077cc;
-      margin-bottom: 5px;
-    }
-
-    .pub-venue {
-      font-style: italic;
-      color: #444;
-      margin-bottom: 8px;
-      display: block;
-    }
-
-    .pub-year {
-      color: #666;
-      font-size: 0.9em;
-      margin-bottom: 12px;
-      display: block;
-    }
-
-    .pub-link a {
-      text-decoration: none;
-      color: white;
-      background: #0077cc;
-      padding: 6px 12px;
-      border-radius: 6px;
-      font-size: 0.9em;
-      transition: background 0.2s ease;
-    }
-
-    .pub-link a:hover {
-      background: #005fa3;
-    }
-
-    header {
-      text-align: center;
-      padding: 20px;
-      background: #0077cc;
-      color: white;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 10px;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      text-align: center;
-      background: #0077cc;
-      color: white;
-      padding: 10px 0;
-      margin-top: 40px;
-    }
-  </style>
-</head>
-
-<body>
-  <header>
-    <h1>Publications</h1>
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="index.html#about">About Me</a> |
-      <a href="publications.html">Publications</a> |
-      <a href="education.html">Education</a>
-    </nav>
-  </header>
-
-  <div class="pub-container">
-     <div class="pub-card">
-      <div class="pub-title">To Be, or Not to Be Expert for a Learning-Based Vulnerability Detection Method, This is the Question</div>
-      <span class="pub-venue">International Conference on the Quality of Information and Communications Technology</span>
-      <span class="pub-year">2026</span>
-      <div class="pub-link"><a href="https://link.springer.com/chapter/10.1007/978-3-032-21373-0_19" target="_blank">View Paper</a></div>
-    </div>
-
-    <div class="pub-card">
-      <div class="pub-title">Decoding Graph Neural Network Decisions for Source Code Vulnerability Detection</div>
-      <span class="pub-venue">International Conference on the Quality of Information and Communications Technology</span>
-      <span class="pub-year">2026</span>
-      <div class="pub-link"><a href="https://link.springer.com/chapter/10.1007/978-3-032-21373-0_18" target="_blank">View Paper</a></div>
-    </div>
-
-    <div class="pub-card">
-      <div class="pub-title">Modeling function-level relationships for vulnerability detection in graph neural networks</div>
-      <span class="pub-venue">Engineering Applications of Artificial Intelligence</span>
-      <span class="pub-year">2026</span>
-      <div class="pub-link"><a href="https://www.sciencedirect.com/science/article/pii/S0952197626011486" target="_blank">View Paper</a></div>
-    </div>
-
-    <div class="pub-card">
-      <div class="pub-title">Domain-aware graph neural networks for source code vulnerability detection</div>
-      <span class="pub-venue">Information and Software Technology</span>
-      <span class="pub-year">2026</span>
-      <div class="pub-link"><a href="https://www.sciencedirect.com/science/article/pii/S0950584926000935?via%3Dihub" target="_blank">View Paper</a></div>
-    </div>
-
-    <div class="pub-card">
-      <div class="pub-title">On the Use of Imbalanced Datasets for Learning-Based Vulnerability Detection</div>
-      <span class="pub-venue">IFIP International Conference on Testing Software and Systems</span>
-      <span class="pub-year">2025</span>
-      <div class="pub-link"><a href="https://link.springer.com/chapter/10.1007/978-3-032-05188-2_20" target="_blank">View Paper</a></div>
-    </div>
-
-    <div class="pub-card">
-      <div class="pub-title">A Taxonomy of System-Level Attacks on Deep Learning Models in Autonomous Vehicles</div>
-      <span class="pub-venue">ACM Transactions on Software Engineering and Methodology</span>
-      <span class="pub-year">2025</span>
-      <div class="pub-link"><a href="https://dl.acm.org/doi/abs/10.1145/3769009" target="_blank">View Paper</a></div>
-    </div>
-
-    <div class="pub-card">
-      <div class="pub-title">Incorporating Domain Knowledge into GNNs for Advanced Vulnerability Detection in Java</div>
-      <span class="pub-venue">IEEE/ACM International Conference on Automation of Software Test (AST)</span>
-      <span class="pub-year">2025</span>
-      <div class="pub-link"><a href="https://ieeexplore.ieee.org/abstract/document/11081725" target="_blank">View Paper</a></div>
-    </div>
-
-    <div class="pub-card">
-      <div class="pub-title">Enhanced Graph Neural Networks for Vulnerability Detection in Java via Advanced Subgraph Construction</div>
-      <span class="pub-venue">IFIP International Conference on Testing Software and Systems</span>
-      <span class="pub-year">2024</span>
-      <div class="pub-link"><a href="https://link.springer.com/chapter/10.1007/978-3-031-80889-0_9" target="_blank">View Paper</a></div>
-    </div>
-
-    <div class="pub-card">
-      <div class="pub-title">Enhancing Vulnerability Detection with Domain Knowledge: A Comparison of Different Mechanisms</div>
-      <span class="pub-venue">IFIP International Conference on Testing Software and Systems</span>
-      <span class="pub-year">2024</span>
-      <div class="pub-link"><a href="https://link.springer.com/chapter/10.1007/978-3-031-80889-0_7" target="_blank">View Paper</a></div>
-    </div>
-
-    <div class="pub-card">
-      <div class="pub-title">Towards a Knowledge Graph Based Approach for Vulnerable Code Weaknesses Identification</div>
-      <span class="pub-venue">IFIP International Conference on Testing Software and Systems</span>
-      <span class="pub-year">2024</span>
-      <div class="pub-link"><a href="https://link.springer.com/chapter/10.1007/978-3-031-80889-0_11" target="_blank">View Paper</a></div>
-    </div>
-
-    <div class="pub-card">
-      <div class="pub-title">A Rapid Review on Graph-Based Learning Vulnerability Detection</div>
-      <span class="pub-venue">International Conference on the Quality of Information and Communications Technology </span>
-      <span class="pub-year">2024</span>
-      <div class="pub-link"><a href="https://link.springer.com/chapter/10.1007/978-3-031-70245-7_25" target="_blank">View Paper</a></div>
-    </div>
-
-    <div class="pub-card">
-      <div class="pub-title">Towards the Use of Domain Knowledge to Enhance Transformer-Based Vulnerability Detection</div>
-      <span class="pub-venue">[Best Paper Award] International Conference on the Quality of Information and Communications Technology </span>
-      <span class="pub-year">2024</span>
-      <div class="pub-link"><a href="https://link.springer.com/chapter/10.1007/978-3-031-70245-7_26" target="_blank">View Paper</a></div>
-    </div>
-
-    <div class="pub-card">
-      <div class="pub-title">Malaria Parasite Detection in Microscopic Blood Smear Images Using Deep Learning Techniques</div>
-      <span class="pub-venue">International Joint Conference on Neural Networks (IJCNN)</span>
-      <span class="pub-year">2024</span>
-      <div class="pub-link"><a href="https://ieeexplore.ieee.org/abstract/document/10651385" target="_blank">View Paper</a></div>
-    </div>
-  </div>
-
-  <footer>
-    <p>&copy; 2025 Rosmaël Zidane Lekeufack Foulefack. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0c242c">
+<meta name="description" content="Peer-reviewed journal and conference publications in AI-driven vulnerability detection, plus submitted manuscripts under review.">
+<meta property="og:type" content="website"><meta property="og:title" content="Publications &amp; Manuscripts — Rosmaël Zidane"><meta property="og:description" content="Peer-reviewed journal and conference publications in AI-driven vulnerability detection, plus submitted manuscripts under review.">
+<meta property="og:url" content="https://rosmaelzidane.github.io/publications.html">
+<meta property="og:image" content="https://rosmaelzidane.github.io/Images/rosmaelphoto.png">
+<link rel="canonical" href="https://rosmaelzidane.github.io/publications.html"><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css">
+<title>Publications &amp; Manuscripts — Rosmaël Zidane</title></head><body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><div class="wrap header-inner"><a href="index.html" class="brand" aria-label="Rosmaël Zidane — home"><span class="brand-mark">RZ</span><span class="brand-label">ROSMAËL ZIDANE<small>Research / Security / AI</small></span></a>
+<button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+<nav class="nav" id="site-nav" aria-label="Main navigation"><a href="index.html" >Home</a>
+<a href="index.html#research" >Research</a>
+<a href="publications.html" aria-current="page" >Publications</a>
+<a href="education.html#mentorship" >Mentorship</a>
+<a href="education.html" >Background</a>
+<a href="cv.html" class="nav-cv" >CV ↗</a></nav></div></header><main id="main"><section class="page-top"><div class="wrap"><div class="eyebrow light">Research / Publications</div><h1>Research publications & manuscripts.</h1><p>Peer-reviewed articles, conference research, and transparently labeled work currently under review.</p><div class="page-cta"><a class="btn btn-primary" href="https://scholar.google.com/citations?user=Eq1YljIAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">View Google Scholar ↗</a><a class="btn btn-outline" href="cv.html">Academic CV ↗</a></div></div></section>
+<section class="page-section"><div class="wrap"><div class="eyebrow">Peer-reviewed / Published</div><h2 class="subheading">Published research</h2><p class="subdesc">Four journal papers and ten conference papers. Conference entries use the event year; for QUATIC 2025 the Springer proceedings appeared in 2026.</p><div class="filter-bar"><div class="filters" role="group" aria-label="Filter publications"><button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">All (14)</button><button type="button" class="filter-btn" data-filter="journal" aria-pressed="false">Journals (4)</button><button type="button" class="filter-btn" data-filter="conference" aria-pressed="false">Conferences (10)</button></div><input class="filter-search" id="pub-search" type="search" aria-label="Search published papers" placeholder="Search titles or venues…"></div><p id="filtered-count" style="color:#668176;font-size:.79rem;min-height:18px" aria-live="polite">Showing 14 of 14 peer-reviewed papers</p><div class="pub-list-page"><article class="pub-entry" data-kind="journal"><span class="pub-year">2026<br><span style="font:600 .68rem 'DM Sans';color:#6d8a80">Journal</span></span><div><h3>Domain-aware graph neural networks for source code vulnerability detection</h3><p>Rosmaël Zidane Lekeufack Foulefack · Alessandro Marchetto<br><strong style="color:#215e50">Information and Software Technology</strong></p><div class="pub-entry-footer"><span class="chip ">First author</span></div></div><a class="pub-open" href="https://doi.org/10.1016/j.infsof.2026.108104" target="_blank" rel="noopener noreferrer" aria-label="Read: Domain-aware graph neural networks for source code vulnerability detection">Read paper ↗</a></article>
+<article class="pub-entry" data-kind="journal"><span class="pub-year">2026<br><span style="font:600 .68rem 'DM Sans';color:#6d8a80">Journal</span></span><div><h3>Modeling function-level relationships for vulnerability detection in graph neural networks</h3><p>Rosmaël Zidane Lekeufack Foulefack · Elisabetta Provvedini · Alessandro Marchetto<br><strong style="color:#215e50">Engineering Applications of Artificial Intelligence</strong></p><div class="pub-entry-footer"><span class="chip ">First author</span></div></div><a class="pub-open" href="https://doi.org/10.1016/j.engappai.2026.114866" target="_blank" rel="noopener noreferrer" aria-label="Read: Modeling function-level relationships for vulnerability detection in graph neural networks">Read paper ↗</a></article>
+<article class="pub-entry" data-kind="journal"><span class="pub-year">2026<br><span style="font:600 .68rem 'DM Sans';color:#6d8a80">Journal</span></span><div><h3>Beyond the Data: Architectural Choices for Imbalanced Learning in Vulnerability Detection</h3><p>Rosmaël Zidane Lekeufack Foulefack · Ulrich Duplex Djifack · Alessandro Marchetto<br><strong style="color:#215e50">SN Computer Science</strong></p><div class="pub-entry-footer"><span class="chip ">First author</span></div></div><a class="pub-open" href="https://doi.org/10.1007/s42979-026-05164-5" target="_blank" rel="noopener noreferrer" aria-label="Read: Beyond the Data: Architectural Choices for Imbalanced Learning in Vulnerability Detection">Read paper ↗</a></article>
+<article class="pub-entry" data-kind="journal"><span class="pub-year">2026<br><span style="font:600 .68rem 'DM Sans';color:#6d8a80">Journal</span></span><div><h3>A Taxonomy of System-Level Attacks on Deep Learning Models in Autonomous Vehicles</h3><p>Masoud Jamshidiyan Tehrani · Jinhan Kim · Rosmaël Zidane Lekeufack Foulefack · Alessandro Marchetto · Paolo Tonella<br><strong style="color:#215e50">ACM Transactions on Software Engineering and Methodology</strong></p><div class="pub-entry-footer"><span class="chip ">Collaboration</span></div></div><a class="pub-open" href="https://doi.org/10.1145/3769009" target="_blank" rel="noopener noreferrer" aria-label="Read: A Taxonomy of System-Level Attacks on Deep Learning Models in Autonomous Vehicles">Read paper ↗</a></article>
+<article class="pub-entry" data-kind="conference"><span class="pub-year">2025<br><span style="font:600 .68rem 'DM Sans';color:#6d8a80">Conference</span></span><div><h3>To Be, or Not to Be Expert for a Learning-Based Vulnerability Detection Method, This is the Question</h3><p>Eddie Veronese · Rosmaël Zidane Lekeufack Foulefack · Alessandro Marchetto<br><strong style="color:#215e50">QUATIC 2025 · proceedings published 2026</strong></p><div class="pub-entry-footer"><span class="chip ">Student-led collaboration</span></div></div><a class="pub-open" href="https://doi.org/10.1007/978-3-032-21373-0_19" target="_blank" rel="noopener noreferrer" aria-label="Read: To Be, or Not to Be Expert for a Learning-Based Vulnerability Detection Method, This is the Question">Read paper ↗</a></article>
+<article class="pub-entry" data-kind="conference"><span class="pub-year">2025<br><span style="font:600 .68rem 'DM Sans';color:#6d8a80">Conference</span></span><div><h3>Decoding Graph Neural Network Decisions for Source Code Vulnerability Detection</h3><p>Rosmaël Zidane Lekeufack Foulefack · Steve Azzolin · Alessandro Marchetto<br><strong style="color:#215e50">QUATIC 2025 · proceedings published 2026</strong></p><div class="pub-entry-footer"><span class="chip ">First author</span></div></div><a class="pub-open" href="https://doi.org/10.1007/978-3-032-21373-0_18" target="_blank" rel="noopener noreferrer" aria-label="Read: Decoding Graph Neural Network Decisions for Source Code Vulnerability Detection">Read paper ↗</a></article>
+<article class="pub-entry" data-kind="conference"><span class="pub-year">2025<br><span style="font:600 .68rem 'DM Sans';color:#6d8a80">Conference</span></span><div><h3>Incorporating Domain Knowledge into GNNs for Advanced Vulnerability Detection in Java</h3><p>Rosmaël Zidane Lekeufack Foulefack · Alessandro Marchetto<br><strong style="color:#215e50">IEEE/ACM AST 2025</strong></p><div class="pub-entry-footer"><span class="chip ">First author</span></div></div><a class="pub-open" href="https://ieeexplore.ieee.org/document/11081725" target="_blank" rel="noopener noreferrer" aria-label="Read: Incorporating Domain Knowledge into GNNs for Advanced Vulnerability Detection in Java">Read paper ↗</a></article>
+<article class="pub-entry" data-kind="conference"><span class="pub-year">2025<br><span style="font:600 .68rem 'DM Sans';color:#6d8a80">Conference</span></span><div><h3>On the Use of Imbalanced Datasets for Learning-Based Vulnerability Detection</h3><p>Rosmaël Zidane Lekeufack Foulefack · Alessandro Marchetto<br><strong style="color:#215e50">IFIP ICTSS 2025</strong></p><div class="pub-entry-footer"><span class="chip ">First author</span></div></div><a class="pub-open" href="https://doi.org/10.1007/978-3-032-05188-2_20" target="_blank" rel="noopener noreferrer" aria-label="Read: On the Use of Imbalanced Datasets for Learning-Based Vulnerability Detection">Read paper ↗</a></article>
+<article class="pub-entry" data-kind="conference"><span class="pub-year">2024<br><span style="font:600 .68rem 'DM Sans';color:#6d8a80">Conference</span></span><div><h3>Enhanced Graph Neural Networks for Vulnerability Detection in Java via Advanced Subgraph Construction</h3><p>Rosmaël Zidane Lekeufack Foulefack · Alessandro Marchetto<br><strong style="color:#215e50">IFIP ICTSS 2024</strong></p><div class="pub-entry-footer"><span class="chip ">First author</span></div></div><a class="pub-open" href="https://doi.org/10.1007/978-3-031-80889-0_9" target="_blank" rel="noopener noreferrer" aria-label="Read: Enhanced Graph Neural Networks for Vulnerability Detection in Java via Advanced Subgraph Construction">Read paper ↗</a></article>
+<article class="pub-entry" data-kind="conference"><span class="pub-year">2024<br><span style="font:600 .68rem 'DM Sans';color:#6d8a80">Conference</span></span><div><h3>Enhancing Vulnerability Detection with Domain Knowledge: A Comparison of Different Mechanisms</h3><p>Alessandro Marchetto · Rosmaël Zidane Lekeufack Foulefack<br><strong style="color:#215e50">IFIP ICTSS 2024</strong></p><div class="pub-entry-footer"><span class="chip ">Collaboration</span></div></div><a class="pub-open" href="https://doi.org/10.1007/978-3-031-80889-0_7" target="_blank" rel="noopener noreferrer" aria-label="Read: Enhancing Vulnerability Detection with Domain Knowledge: A Comparison of Different Mechanisms">Read paper ↗</a></article>
+<article class="pub-entry" data-kind="conference"><span class="pub-year">2024<br><span style="font:600 .68rem 'DM Sans';color:#6d8a80">Conference</span></span><div><h3>Towards a Knowledge Graph Based Approach for Vulnerable Code Weaknesses Identification</h3><p>Martina Vecellio Reane · Daniele Dall’aNese · Rosmaël Zidane Lekeufack Foulefack · Alessandro Marchetto<br><strong style="color:#215e50">IFIP ICTSS 2024</strong></p><div class="pub-entry-footer"><span class="chip ">Student-led collaboration</span></div></div><a class="pub-open" href="https://doi.org/10.1007/978-3-031-80889-0_11" target="_blank" rel="noopener noreferrer" aria-label="Read: Towards a Knowledge Graph Based Approach for Vulnerable Code Weaknesses Identification">Read paper ↗</a></article>
+<article class="pub-entry" data-kind="conference"><span class="pub-year">2024<br><span style="font:600 .68rem 'DM Sans';color:#6d8a80">Conference</span></span><div><h3>A Rapid Review on Graph-Based Learning Vulnerability Detection</h3><p>Rosmaël Zidane Lekeufack Foulefack · Alessandro Marchetto<br><strong style="color:#215e50">QUATIC 2024</strong></p><div class="pub-entry-footer"><span class="chip ">First author</span></div></div><a class="pub-open" href="https://doi.org/10.1007/978-3-031-70245-7_25" target="_blank" rel="noopener noreferrer" aria-label="Read: A Rapid Review on Graph-Based Learning Vulnerability Detection">Read paper ↗</a></article>
+<article class="pub-entry" data-kind="conference"><span class="pub-year">2024<br><span style="font:600 .68rem 'DM Sans';color:#6d8a80">Conference</span></span><div><h3>Towards the Use of Domain Knowledge to Enhance Transformer-Based Vulnerability Detection</h3><p>Alessandro Marchetto · Rosmaël Zidane Lekeufack Foulefack<br><strong style="color:#215e50">QUATIC 2024</strong></p><div class="pub-entry-footer"><span class="chip orange">Best Paper Award · ex aequo</span></div></div><a class="pub-open" href="https://doi.org/10.1007/978-3-031-70245-7_26" target="_blank" rel="noopener noreferrer" aria-label="Read: Towards the Use of Domain Knowledge to Enhance Transformer-Based Vulnerability Detection">Read paper ↗</a></article>
+<article class="pub-entry" data-kind="conference"><span class="pub-year">2024<br><span style="font:600 .68rem 'DM Sans';color:#6d8a80">Conference</span></span><div><h3>Malaria Parasite Detection in Microscopic Blood Smear Images Using Deep Learning Techniques</h3><p>Rosmaël Zidane Lekeufack Foulefack et al.<br><strong style="color:#215e50">IJCNN 2024</strong></p><div class="pub-entry-footer"><span class="chip ">First author</span></div></div><a class="pub-open" href="https://ieeexplore.ieee.org/document/10651385" target="_blank" rel="noopener noreferrer" aria-label="Read: Malaria Parasite Detection in Microscopic Blood Smear Images Using Deep Learning Techniques">Read paper ↗</a></article></div>
+<section class="under-review" id="under-review"><div class="eyebrow">Works in progress / Not yet published</div><h2 class="subheading">Submitted & under review</h2><p class="subdesc">These manuscripts are <strong>not</strong> counted among the 14 peer-reviewed publications. Status reflects the information available in November 2026 and may change after editorial decisions.</p><div class="submissions-grid"><article class="submission"><span class="chip orange">Submitted · under review</span><h3>Monolithic and Mixture-of-Expert Paradigms for Source Code Vulnerability Detection</h3><p>ASE · submitted manuscript</p><p style="margin-top:7px">Eddie Veronese, Rosmaël Zidane Lekeufack Foulefack, Alessandro Marchetto</p></article>
+<article class="submission"><span class="chip orange">Submitted · under review</span><h3>Bridging the Trust Gap: Two Controlled Experiments on How Developers Verify AI-Generated Security Warnings</h3><p>ASE · submitted manuscript</p><p style="margin-top:7px">Collaborative research on developer trust and security-warning verification</p></article>
+<article class="submission"><span class="chip orange">Submitted · under review</span><h3>Graph Neural Network in Security Smell Detection in Ansible Infrastructure as Code</h3><p>Journal of Systems Architecture · submitted manuscript</p><p style="margin-top:7px">International research collaboration · VUB / University of Trento</p></article>
+<article class="submission"><span class="chip orange">Submitted · under review</span><h3>Controlled Fusion of Sequential and Graph Features for Vulnerability Detection Architecture</h3><p>Journal of Information Security and Applications · submitted manuscript</p><p style="margin-top:7px">Related to Marco Roccon’s co-mentored Master’s research</p></article></div></section>
+<div style="margin-top:24px" class="note">For the definitive bibliography, current citation record, and newly indexed papers, see <a class="text-link" href="https://scholar.google.com/citations?user=Eq1YljIAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a> or <a class="text-link" href="https://dblp.org/pid/385/5463" target="_blank" rel="noopener noreferrer">DBLP ↗</a>.</div></div></section></main><footer class="footer"><div class="wrap footer-inner"><small>© 2026 Rosmaël Zidane Lekeufack Foulefack · Built to share research and collaboration.</small><div class="links"><a href="https://scholar.google.com/citations?user=Eq1YljIAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a><a href="https://github.com/RosmaelZidane" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/rosmaellekeufack" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://orcid.org/0009-0005-7701-1634" target="_blank" rel="noopener noreferrer">ORCID ↗</a><a href="mailto:rz.lekeufack@unitn.it">Email ↗</a></div></div></footer><script src="script.js" defer></script></body></html>
